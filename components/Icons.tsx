@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {
+interface IconProps extends Omit<React.SVGProps<SVGSVGElement>, "stroke"> {
   name: string;
   size?: number;
   stroke?: number;
